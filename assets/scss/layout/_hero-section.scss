@@ -1,0 +1,15 @@
+.hero-section {
+    background-image: url(../img/desarrolloweb2021t.svg);
+    background-position: center;
+    background-size:contain;
+    background-repeat: no-repeat;
+    position: relative;
+    width: 100%;
+    height: 300px;
+}
+
+@include desktop-view{
+    .hero-section{
+        background-size: auto;
+    }
+}

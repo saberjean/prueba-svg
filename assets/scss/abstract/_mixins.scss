@@ -1,0 +1,12 @@
+
+@mixin cell-view {
+    @media screen and (min-width: $min-cell) {
+        @content;
+    }
+}
+
+@mixin desktop-view {
+    @media screen and (min-width: $min-desktop) {
+        @content;
+    }
+}

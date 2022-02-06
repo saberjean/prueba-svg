@@ -1,0 +1,260 @@
+
+.container-1 {
+  border: 1px solid black;
+  max-width: 450px;
+  margin: 20px auto;
+  padding: 20px;
+}
+.container-info {
+  max-width: 380px;
+  border: 1px dotted gray;
+  padding: 5px;
+  margin: 20px auto;
+  font-family: $ff-ubuntu;
+  &__img {
+    width: 18rem;
+    margin: 10px auto;
+    display: block;
+  }
+  &__link {
+    text-decoration: none;
+  }
+  &__p1 {
+    line-height: 2rem;
+    text-align: justify;
+    margin: 0 10px;
+  }
+  &__p2 {
+    margin: 10px 10px;
+    font-size: $fs-large;
+    font-weight: $fw-bold;
+    margin: 0 0 10px 0 ;
+  }
+  &__title {
+    margin-top: 15px;
+    font-size: $fs-x-large;
+    font-weight: $fw-bold;
+    margin-left: 15px;
+    margin-bottom: 15px;
+  }
+    &__list {
+      text-decoration: none;
+      color: rgb(162, 52, 196);
+    }
+  }
+
+
+.icon{
+  color: $color-black;
+  margin-left: 10px;
+  margin-right: 20px;
+}
+
+
+.container-2 {
+  border: 1px solid black;
+  max-width: 450px;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+.container-info2 {
+  max-width: 380px;
+  padding: 5px;
+  margin: 20px auto;
+  font-family: $ff-ubuntu;
+  &__img {
+    width: 16rem;
+    margin: 10px auto;
+    display: block;
+    height: 16rem;
+    margin-bottom: 15px;
+    border-radius: 200px;
+    border: 1px solid $color-sable;
+    -webkit-border-radius: 200px;
+    -moz-border-radius: 200px;
+    -ms-border-radius: 200px;
+    -o-border-radius: 200px;
+}
+  &__link {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+    text-decoration: none;
+  }
+  &__p1 {
+    line-height: 2rem;
+    text-align: justify;
+    margin: 20px 10px;
+ 
+  }
+  &__title {
+    text-align: center;
+    margin-bottom: 15px;
+    &--back {
+      color: $color-white;
+      background-color: $color-charcoal;
+      text-align: center;
+      margin: 10px 0;
+    }
+  }
+ }
+
+@include desktop-view {
+  .container-information1 {
+    border: 1px solid black;
+    max-width: 30rem;
+    margin: 20px auto;
+    padding: 20px;
+  }
+  .container-info1 {
+    max-width: 30rem;
+    border: 1px dotted gray;
+    padding: 5px;
+    margin: 10px auto;
+    font-family: $ff-ubuntu;
+    &__img {
+      width: 25rem;
+      margin: 10px auto;
+      display: block;
+    }
+    &__p1 {
+      line-height: 2rem;
+      text-align: justify;
+      margin: 0 10px;
+    }
+    &__p2 {
+      margin: 10px 10px;
+      font-size: $fs-large;
+      font-weight: $fw-bold;
+    }
+    &__title {
+      margin-top: 10px;
+      font-size: $fs-x-large;
+      font-weight: $fw-bold;
+      margin-left: 10px;
+    }
+  }
+}
+
+@include desktop-view {
+  .container-information2 {
+    border: 1px solid black;
+    max-width: 30rem;
+    height: 1127px;
+    margin: 20px auto;
+    padding: 20px;
+  }
+  .container-info2 {
+    max-width: 30rem;
+    padding: 5px;
+    margin: 20px auto;
+    font-family: $ff-ubuntu;
+    &__img {
+      width: 12rem;
+      margin: 10px auto;
+      display: block;
+      height: 12rem;
+      border-radius: 150px;
+      border: 1px solid $color-sable;
+      -webkit-border-radius: 150px;
+      -moz-border-radius: 150px;
+      -ms-border-radius: 150px;
+      -o-border-radius: 150px;
+    }
+    &__link {
+      display: flex;
+      justify-content: center;
+      margin: 10px 0;
+      color: $color-black;
+      margin-right: 15px;
+
+    }
+    &__p1 {
+      line-height: 2rem;
+      text-align: justify;
+      margin: 0 10px;
+    }
+    &__title {
+      text-align: center;
+      &--2 {
+        color: $color-white;
+        background-color: $color-charcoal;
+        text-align: center;
+        margin: 10px 0;
+      }
+    }
+  }
+}
+
+.fa-facebook-f {
+  color: $color-black;
+  margin-right: 2rem;
+}
+.fa-github {
+  color: $color-black;
+  margin-right: 2rem;
+}
+.fa-twitter {
+  color: $color-black;
+  margin-right: 2rem;
+}
+
+.svg {
+  display: block;
+  margin: 10px auto;
+  &__1 {
+    animation-name: move;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+  }
+  &__2 {
+    animation-name: rotate;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    transform-origin: center;
+    transform-box: fill-box;
+  }
+}
+
+@keyframes move {
+  0% {
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+  }
+  50% {
+    transform: translateX(10%);
+    -webkit-transform: translateX(10%);
+    -moz-transform: translateX(10%);
+    -ms-transform: translateX(10%);
+    -o-transform: translateX(10%);
+}
+75% {
+  transform: translateX(-10%);
+  -webkit-transform: translateX(-10%);
+  -moz-transform: translateX(-10%);
+  -ms-transform: translateX(-10%);
+  -o-transform: translateX(-10%);
+}
+  100% {
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+  }
+}
+
