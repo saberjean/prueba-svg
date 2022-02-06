@@ -1,0 +1,59 @@
+.svg {
+    display: block;
+    margin: 10px auto;
+    &__1 {
+      animation-name: move;
+      animation-duration: 5s;
+      animation-iteration-count: infinite;
+    }
+    &__2 {
+      animation-name: rotate;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+      transform-origin: center;
+      transform-box: fill-box;
+    }
+  }
+  
+  @keyframes move {
+    0% {
+      transform: translateX(0);
+      -webkit-transform: translateX(0);
+      -moz-transform: translateX(0);
+      -ms-transform: translateX(0);
+      -o-transform: translateX(0);
+    }
+    50% {
+      transform: translateX(10%);
+      -webkit-transform: translateX(10%);
+      -moz-transform: translateX(10%);
+      -ms-transform: translateX(10%);
+      -o-transform: translateX(10%);
+  }
+  75% {
+    transform: translateX(-10%);
+    -webkit-transform: translateX(-10%);
+    -moz-transform: translateX(-10%);
+    -ms-transform: translateX(-10%);
+    -o-transform: translateX(-10%);
+  }
+    100% {
+      transform: translateX(0);
+      -webkit-transform: translateX(0);
+      -moz-transform: translateX(0);
+      -ms-transform: translateX(0);
+      -o-transform: translateX(0);
+    }
+  }
+  
+  @keyframes rotate {
+    50% {
+      transform: rotate(360deg);
+      -webkit-transform: rotate(360deg);
+      -moz-transform: rotate(360deg);
+      -ms-transform: rotate(360deg);
+      -o-transform: rotate(360deg);
+    }
+  }
+  
+  

@@ -40,7 +40,7 @@
   background-repeat: no-repeat;
   position: relative;
   width: 100%;
-  height: 300px;
+  height: 400px;
 }
 
 @media screen and (min-width: 992px) {
@@ -50,13 +50,14 @@
 }
 .container-1 {
   border: 1px solid black;
-  max-width: 450px;
+  max-width: 750px;
   margin: 20px auto;
   padding: 20px;
+  width: 100%;
 }
 
 .container-info {
-  max-width: 380px;
+  max-width: 450px;
   border: 1px dotted gray;
   padding: 5px;
   margin: 20px auto;
@@ -101,13 +102,14 @@
 
 .container-2 {
   border: 1px solid black;
-  max-width: 450px;
+  max-width: 750px;
   margin: 20px auto;
+  width: 100%;
   padding: 20px;
 }
 
 .container-info2 {
-  max-width: 380px;
+  max-width: 450px;
   padding: 5px;
   margin: 20px auto;
   font-family: "Ubuntu", sans-serif;
@@ -248,62 +250,6 @@
   margin-right: 2rem;
 }
 
-.svg {
-  display: block;
-  margin: 10px auto;
-}
-.svg__1 {
-  animation-name: move;
-  animation-duration: 5s;
-  animation-iteration-count: infinite;
-}
-.svg__2 {
-  animation-name: rotate;
-  animation-duration: 2s;
-  animation-iteration-count: infinite;
-  transform-origin: center;
-  transform-box: fill-box;
-}
-
-@keyframes move {
-  0% {
-    transform: translateX(0);
-    -webkit-transform: translateX(0);
-    -moz-transform: translateX(0);
-    -ms-transform: translateX(0);
-    -o-transform: translateX(0);
-  }
-  50% {
-    transform: translateX(10%);
-    -webkit-transform: translateX(10%);
-    -moz-transform: translateX(10%);
-    -ms-transform: translateX(10%);
-    -o-transform: translateX(10%);
-  }
-  75% {
-    transform: translateX(-10%);
-    -webkit-transform: translateX(-10%);
-    -moz-transform: translateX(-10%);
-    -ms-transform: translateX(-10%);
-    -o-transform: translateX(-10%);
-  }
-  100% {
-    transform: translateX(0);
-    -webkit-transform: translateX(0);
-    -moz-transform: translateX(0);
-    -ms-transform: translateX(0);
-    -o-transform: translateX(0);
-  }
-}
-@keyframes rotate {
-  0% {
-    transform: rotate(360deg);
-    -webkit-transform: rotate(360deg);
-    -moz-transform: rotate(360deg);
-    -ms-transform: rotate(360deg);
-    -o-transform: rotate(360deg);
-  }
-}
 .footer {
   background-color: #000000;
   color: #FFFFFF;
@@ -383,6 +329,63 @@
   .container-main {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-gap: 50px;
+  }
+}
+.svg {
+  display: block;
+  margin: 10px auto;
+}
+.svg__1 {
+  animation-name: move;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+.svg__2 {
+  animation-name: rotate;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+@keyframes move {
+  0% {
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+  }
+  50% {
+    transform: translateX(10%);
+    -webkit-transform: translateX(10%);
+    -moz-transform: translateX(10%);
+    -ms-transform: translateX(10%);
+    -o-transform: translateX(10%);
+  }
+  75% {
+    transform: translateX(-10%);
+    -webkit-transform: translateX(-10%);
+    -moz-transform: translateX(-10%);
+    -ms-transform: translateX(-10%);
+    -o-transform: translateX(-10%);
+  }
+  100% {
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+  }
+}
+@keyframes rotate {
+  50% {
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
   }
 }
 
